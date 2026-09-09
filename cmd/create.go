@@ -11,6 +11,7 @@ var createCommand *cobra.Command = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		handlers.HandlerInterface()
 	},
+	Aliases: []string{"c"},
 }
 
 func init() {
