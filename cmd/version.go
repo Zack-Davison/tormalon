@@ -8,7 +8,7 @@ import (
 
 var version string = "1.0.0"
 
-var versionCommand = &cobra.Command{
+var versionCommand *cobra.Command = &cobra.Command{
 	Use:   "version",
 	Short: "Print Tormalon CLI version",
 	Run: func(cmd *cobra.Command, args []string) {
